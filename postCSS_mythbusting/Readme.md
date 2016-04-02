@@ -76,9 +76,9 @@ return gulp.src( ['/**/*.css'] )
 
 PostCSS сильно вырос за последние 12 месяцев (1 год, *прим. переводчика*). Хотя старые плагины по-прежнему доступны, появилось большое количество новых, и круг возможностей, которые они предлагают, заметно расширился.
 
-Если вас все устраивает в текущем препроцессоре и раньше вы не использовали PostCSS, поскольку он предлагал всё то же самое, стоит взглянуть на него ещё раз. К тому же, такие плагины, как [Stylelint](http://stylelint.io/), [PostCSS Stats](https://github.com/cssstats/postcss-cssstats) и [doiuse](https://github.com/anandthakker/doiuse) могут обеспечить автоматический анализ вашего CSS, чего не предложит стандартный препроцессор.
+Если вас всё устраивает в текущем препроцессоре и раньше вы не использовали PostCSS, поскольку он предлагал всё то же самое, стоит взглянуть на него ещё раз. К тому же, такие плагины, как [Stylelint](http://stylelint.io/), [PostCSS Stats](https://github.com/cssstats/postcss-cssstats) и [doiuse](https://github.com/anandthakker/doiuse) могут обеспечить автоматический анализ вашего CSS, чего не предложит стандартный препроцессор.
 
-Также можно оптимировать код, например, минифицировать [SVG](https://github.com/ben-eb/postcss-svgo) и [CSS](https://github.com/ben-eb/cssnano), предоставить более изящные способы добавления фоллбэков для стилей, чем миксины.
+Также можно оптимизировать код: например, минифицировать [SVG](https://github.com/ben-eb/postcss-svgo) и [CSS](https://github.com/ben-eb/cssnano), предоставить более изящные способы добавления фоллбэков для стилей, чем миксины.
 
 Если вы хотите поэкспериментировать с [CSS модулями](http://www.sitepoint.com/understanding-css-modules-methodology/), то и тут у PostCSS [найдется подходящий плагин](https://github.com/postcss/postcss#solve-global-css-problem).
 
@@ -96,7 +96,7 @@ _Автор: Ashley Nolan_
 
 _Оригинал статьи: [http://www.sitepoint.com/postcss-mythbusting/](http://www.sitepoint.com/postcss-mythbusting/)_
 
-_Перевел [Андрей Алексеев](https://github.com/aalexeev239)_
+_Перевёл [Андрей Алексеев](https://github.com/aalexeev239)_
 
 
 
