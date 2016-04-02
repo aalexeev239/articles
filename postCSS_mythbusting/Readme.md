@@ -92,7 +92,7 @@ PostCSS — это мощный инструмент процессинга CSS,
 
 Если вы раньше рассматривали на PostCSS и пренебрегли им по каким-либо причинам, я рекомендую вам пересмотреть свои взгляды. Это инструмент, способный улучшить любой процесс фронтенд разработки.
 
-_ Автор: Ashley Nolan_
+_Автор: Ashley Nolan_
 _Оригинал статьи: [http://www.sitepoint.com/postcss-mythbusting/](http://www.sitepoint.com/postcss-mythbusting/)_
 _Перевел [Андрей Алексеев](https://github.com/aalexeev239)_
 
