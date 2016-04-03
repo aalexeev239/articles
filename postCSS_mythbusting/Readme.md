@@ -78,7 +78,7 @@ PostCSS сильно вырос за последний год. Появилос
 
 Если вас всё устраивает в текущем препроцессоре и раньше вы не использовали PostCSS, поскольку он предлагал всё то же самое, стоит взглянуть на него ещё раз. Такие плагины, как [Stylelint](http://stylelint.io/), [postcss-stats](https://github.com/cssstats/postcss-cssstats) и [doiuse](https://github.com/anandthakker/doiuse) могут обеспечить автоматический анализ вашего CSS, чего не предложит обычный препроцессор.
 
-Также можно оптимизировать код: например, минифицировать [SVG](https://github.com/ben-eb/postcss-svgo) и [CSS](https://github.com/ben-eb/cssnano), предоставить более изящные способы добавления фоллбэков для стилей, чем миксины.
+Также можно оптимизировать код: например, минифицировать [SVG](https://github.com/ben-eb/postcss-svgo) и [CSS](https://github.com/ben-eb/cssnano), предоставить более изящные способы обратной совместимости со старыми браузерами, чем миксины.
 
 Если вы хотите поэкспериментировать с [CSS модулями](http://www.sitepoint.com/understanding-css-modules-methodology/), то и тут у PostCSS [найдется подходящий плагин](https://github.com/postcss/postcss#solve-global-css-problem).
 
