@@ -80,7 +80,7 @@ PostCSS сильно вырос за последний год. Появилос
 
 Также можно оптимизировать код: например, минифицировать [SVG](https://github.com/ben-eb/postcss-svgo) и [CSS](https://github.com/ben-eb/cssnano), предоставить более изящные способы обратной совместимости со старыми браузерами, чем миксины.
 
-Если вы хотите поэкспериментировать с [CSS Modules](http://www.sitepoint.com/understanding-css-modules-methodology/), то и тут вам пригодится PostCSS (так как это просто [набор плагинов](https://github.com/postcss/postcss#solve-global-css-problem) для PostCSS — *прим. перевод.*).
+Если вы хотите поэкспериментировать с [CSS Modules](http://www.sitepoint.com/understanding-css-modules-methodology/), то и тут вам пригодится PostCSS (так как это просто [набор плагинов](https://github.com/postcss/postcss#solve-global-css-problem) для PostCSS — *прим. переводчика*).
 
 
 Главная вещь, о которой стоит помнить при работе с PostCSS – то, что это до сих пор относительно новый инструмент. Пока сообщество растёт, будет создаваться больше плагинов, решающих интересные проблемы CSS. Загляните в каталог доступных плагинов на [postcss.parts](http://postcss.parts/).
