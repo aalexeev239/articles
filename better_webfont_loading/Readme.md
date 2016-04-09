@@ -2,8 +2,6 @@ _Вы читаете перевод статьи [Better webfont loading with us
 
 # Улучшение загрузки веб-шрифтов с использованием localStorage и поддержкой формата WOFF2
 
-Оригинал: [Better webfont loading with using localStorage and providing WOFF2 support](http://bdadam.com/blog/better-webfont-loading-with-localstorage-and-woff2.html). 18th December 2014 | by Adam Beres-Deak.
-
 В своей [прошлой статье](http://bdadam.com/blog/loading-webfonts-with-high-performance.html)([перевод](http://css-live.ru/articles-css/bystraya-zagruzka-veb-shriftov-na-adaptivnyx-sajtax.html)) я показал метод,  как можно загружать веб-шрифты не блокируя отрисовку страницы и убрать при этом раздражающее пользователей мерцание текста. На этот раз я продемонстрирую оптимизированную версию скрипта и покажу способ подключения WOFF2 для новейших браузеров.
 
 ## Задачи
@@ -147,23 +145,25 @@ C учетом этого, №1 — победитель.
 
 Скриншоты, чтобы показать эти отличия:
 
-![скриншот](http://bdadam.com/static/article-assets/webfonts2/filmstrip-localStorage.jpg "Асинхронная загрузка CSS с использованием localStorage. Нет перерисовки.")
+![Асинхронная загрузка CSS с использованием localStorage. Нет перерисовки](img/filmstrip-localStorage.jpg)
 
 *Асинхронная загрузка CSS с использованием localStorage. Нет перерисовки.*
 
 
 
-![скриншот](http://bdadam.com/static/article-assets/webfonts2/filmstrip-async-css.jpg "Асинхронная загрузка CSS без использования localStorage. Видна перерисовка.")
+!["Асинхронная загрузка CSS без использования localStorage. Видна перерисовка."](img/filmstrip-async-css.jpg)
 
 *Асинхронная загрузка CSS без использования localStorage. Видна перерисовка.*
 
 
 
-![скриншот](http://bdadam.com/static/article-assets/webfonts2/filmstrip-external-font.jpg "Внешняя загрузка шрифтов. Отрисовка останавливается, пока грифты не загрузятся.")
+!["Внешняя загрузка шрифтов. Отрисовка останавливается, пока грифты не загрузятся."](img/filmstrip-external-font.jpg)
 
 *Внешняя загрузка шрифтов. Отрисовка останавливается, пока шрифты не загрузятся.*
 
+
 ### Материалы
+
 * [My prevoius article about webfont loading on responsive sites](http://bdadam.com/blog/loading-webfonts-with-high-performance.html)
 * [Woff2 feature test by Filament Group](https://github.com/filamentgroup/woff2-feature-test)
 * [WOFF2 support @ caniuse.com](http://caniuse.com/#feat=woff2)
@@ -176,19 +176,9 @@ C учетом этого, №1 — победитель.
 Как посоветовал @CrocoDillon, я добавил третий (необязательный) аргумент к `new FontFace(..., ..., {})` при проверке поддержки WOFF2. Иначе некоторые браузеры выдают ошибки (Chrome 35 и 36, Opera 22 и 23). Посмотрите внимательней на [pull request](https://github.com/filamentgroup/woff2-feature-test/pull/3). 
 
 ---
-*Перевел [Андрей Алексеев](https://github.com/aalexeev239).*
 
+_Автор: Adam Beres-Deak_
 
+_Оригинал статьи: [Better webfont loading with using localStorage and providing WOFF2 support](http://bdadam.com/blog/better-webfont-loading-with-localstorage-and-woff2.html)_
 
-
-
-
-
-
-
-
-
-
-
-
-
+_Перевёл [Андрей Алексеев](https://github.com/aalexeev239)_
