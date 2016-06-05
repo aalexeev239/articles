@@ -1,12 +1,12 @@
-# Способы загрузки веб-шрифтов
+# Паттерны загрузки веб-шрифтов
 
 _Вы читаете перевод статьи Bram Stein [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html)._
 
 ---
 
-_Загрузка веб-шрифтов может показаться сложной задачей. Однако, на самом деле, она довольно проста, если вы будете использовать описанные ниже способы. Комбинируя их, вы сможете управлять загрузкой веб-шрифтов во всех браузерах._
+_Загрузка веб-шрифтов может показаться сложной задачей. Однако, на самом деле, она довольно проста, если вы будете использовать описанные ниже паттерны. Комбинируя их, вы сможете управлять загрузкой веб-шрифтов во всех браузерах._
 
-В этих способах используется [Font Face Ob­server](https://github.com/bramstein/fontfaceobserver), простая и небольшая библиотека загрузки веб-шрифтов. Font Face Ob­server выбирает наиболее эффективный способ загрузки шрифта, основываясь на его браузерной поддержке, так что мы можем загружать шрифты, не беспокоясь о кроссбраузерности.
+В этих паттернах используется [Font Face Ob­server](https://github.com/bramstein/fontfaceobserver), простая и небольшая библиотека загрузки веб-шрифтов. Font Face Ob­server выбирает наиболее эффективный способ загрузки шрифта, основываясь на его браузерной поддержке, так что мы можем загружать шрифты, не беспокоясь о кроссбраузерности.
 
 1. [Обычная загрузка шрифтов](#ch1)
 2. [Загрузка группы шрифтов](#ch2)
@@ -15,20 +15,20 @@ _Загрузка веб-шрифтов может показаться слож
 5. [Особое отображение шрифтов](#ch5)
 6. [Оптимизация для кэширования](#ch6)
 
-Невозможно посоветовать единый способ, который идеально подходил бы каждому. Внимательно изучите свой сайт, его аудиторию, и на основании этого выберите тот способ или их комбинацию, которые подойдут лучше всего.
+Невозможно посоветовать единый паттерн, который идеально подходил бы каждому. Внимательно изучите свой сайт, его аудиторию, и на основании этого выберите тот способ загрузки или их комбинацию, которые подойдут лучше всего.
 
 
 ## <a id="ch1"></a>Обычная загрузка шрифтов
 
 Font Face Ob­server даёт вам возможность контролировать загрузку веб-шрифтов через простой интерфейс, основанный на промисах. Не имеет значения, откуда будут загружаться шрифты: вы можете размещать их как у себя, так и подключать через сервисы — [Google Fonts](https://www.google.com/fonts), [Type­kit](https://typekit.com/), [Fonts.com](https://fonts.com/), и [Web­type](http://www.webtype.com/).
 
-Чтобы не перегружать способы лишним кодом, будем считать, что вы хостите веб-шрифты у себя. Это означает, что в ваших CSS-файлах будет одно или несколько объявлений `@font-face`, в которых указано, какие шрифты нужно загрузить через Font Face Ob­server. Для краткости мы не будем объявлять каждое из подобных правил в коде, но будем считать, что они есть.
+Чтобы не перегружать паттерны лишним кодом, будем считать, что вы размещаете веб-шрифты у себя. Это означает, что в ваших CSS-файлах будет одно или несколько объявлений `@font-face`, в которых указано, какие шрифты нужно загрузить через Font Face Ob­server. Для краткости мы не будем объявлять каждое из подобных правил в коде, но будем считать, что они есть.
 
 ```css
 @font-face {
-  font-family: Output Sans;
-  src: url(output-sans.woff2) format("woff2"),
-       url(output-sans.woff) format("woff");
+	font-family: Output Sans;
+	src: url(output-sans.woff2) format("woff2"),
+			 url(output-sans.woff) format("woff");
 }
 ```
 
@@ -40,11 +40,11 @@ var output = new FontFaceObserver('Output Sans');
 var input = new FontFaceObserver('Input Mono');
 
 output.load().then(function () {
-  console.log('Загружен Output Sans.');
+	console.log('Загружен Output Sans.');
 });
 
 input.load().then(function () {
-  console.log('Загружен Input Mono.');
+	console.log('Загружен Input Mono.');
 });
 ```
 
@@ -59,14 +59,14 @@ input.load().then(function () {
 ```js
 var normal = new FontFaceObserver('Output Sans');
 var italic = new FontFaceObserver('Output Sans', {
-  style: 'italic'
+	style: 'italic'
 });
 
 Promise.all([
-  normal.load(),
-  italic.load()
+	normal.load(),
+	italic.load()
 ]).then(function () {
-  console.log('Загружено семейство Output Sans.');
+	console.log('Загружено семейство Output Sans.');
 });
 ```
 
@@ -83,9 +83,9 @@ Promise.all([
 
 ```js
 function timer(time) {
-  return new Promise(function (resolve, reject) {
-    setTimeout(reject, time);
-  });
+	return new Promise(function (resolve, reject) {
+		setTimeout(reject, time);
+	});
 }
 ```
 
@@ -96,12 +96,12 @@ function timer(time) {
 var font = new FontFaceObserver('Output Sans');
 
 Promise.race([
-  timer(1000),
-  font.load()
+	timer(1000),
+	font.load()
 ]).then(function () {
-  console.log('Загружен Output Sans.');
+	console.log('Загружен Output Sans.');
 }).catch(function () {
-  console.log('Время на загрузку Output Sans истекло.');
+	console.log('Время на загрузку Output Sans истекло.');
 });
 ```
 
@@ -118,11 +118,11 @@ var primary = new FontFaceObserver('Primary');
 var secondary = new FontFaceObserver('Secondary');
 
 primary.load().then(function () {
-  console.log('Загружен основной шрифт.')
+	console.log('Загружен основной шрифт.')
 
-  secondary.load().then(function () {
-    console.log('Загружен второстепенный шрифт.')
-  });
+	secondary.load().then(function () {
+		console.log('Загружен второстепенный шрифт.')
+	});
 });
 ```
 
@@ -155,11 +155,11 @@ var html = document.documentElement;
 html.classList.add('fonts-loading');
 
 font.load().then(function () {
-  html.classList.remove('fonts-loading');
-  html.classList.add('fonts-loaded');
+	html.classList.remove('fonts-loading');
+	html.classList.add('fonts-loaded');
 }).catch(function () {
-  html.classList.remove('fonts-loading');
-  html.classList.add('fonts-failed');
+	html.classList.remove('fonts-loading');
+	html.classList.add('fonts-failed');
 });
 ```
 
@@ -168,11 +168,11 @@ font.load().then(function () {
 
 ```css
 body {
-  font-family: Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 }
 
 .fonts-loaded body {
-  font-family: Output Sans, Verdana, sans-serif;
+	font-family: Output Sans, Verdana, sans-serif;
 }
 ```
 
@@ -183,22 +183,22 @@ body {
 
 ```css
 .fonts-loading body {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 .fonts-loaded body,
 .fonts-failed body {
-  visibility: visible;
+	visibility: visible;
 }
 ```
 
 
-Такой способ сокрытия контента кажется вам странным? Хорошо, если так. Этот способ следует применять только в очень специфичных случаях. Например, если у вас нет подходящего запасного шрифта, или вы точно знаете, что шрифт был закэширован ранее.
+Такой способ сокрытия контента кажется вам странным? Хорошо, если так. Этот паттерн следует применять только в очень специфичных случаях. Например, если у вас нет подходящего запасного шрифта, или вы точно знаете, что шрифт был закэширован ранее.
 
 
 ## <a id="ch6"></a>Оптимизация для кэширования
 
-Все предыдущие способы позволяли вам регулировать когда и как загружаются шрифты. Однако, часто мы хотим, чтобы в зависимости от наличия или отсутствия шрифта в кэше сайт вёл себя по-разному. Например, если шрифт закэширован, нет необходимости отрисовывать текст сначала запасным шрифтом. Такого эффекта можно добиться сохранением в Ses­sion Stor­age статуса о том, был ли шрифт закэширован или нет.
+Все предыдущие паттерны позволяли вам регулировать когда и как загружаются шрифты. Однако, часто мы хотим, чтобы в зависимости от наличия или отсутствия шрифта в кэше сайт вёл себя по-разному. Например, если шрифт закэширован, нет необходимости отрисовывать текст сначала запасным шрифтом. Такого эффекта можно добиться сохранением в Ses­sion Stor­age статуса о том, был ли шрифт закэширован или нет.
 
 Когда шрифт загружен, мы устанавливаем флаг в Ses­sion Stor­age. Флаг сохраняется на протяжении всей сессии, и с его помощью мы можем определить, находится файл в браузерном кэше или нет.
 
@@ -206,9 +206,9 @@ body {
 var font = new FontFaceObserver('Output Sans');
 
 font.load().then(function () {
-  sessionStorage.fontsLoaded = true;
+	sessionStorage.fontsLoaded = true;
 }).catch(function () {
-  sessionStorage.fontsLoaded = false;
+	sessionStorage.fontsLoaded = false;
 });
 ```
 
@@ -217,9 +217,9 @@ font.load().then(function () {
 
 ```js
 if (sessionStorage.fontsLoaded) {
-  var html = document.documentElement;
+	var html = document.documentElement;
 
-  html.classList.add('fonts-loaded');
+	html.classList.add('fonts-loaded');
 }
 ```
 
