@@ -1,6 +1,6 @@
 # Статьи и переводы
 
-
+- [Техники валидации форм](form_validation_techniques/) _перевод_
 - [Паттерны загрузки веб-шрифтов](web_font_loading_patterns/) _перевод_<br> Публикация на [Веб-стандартах](http://web-standards.ru/articles/web-font-loading-patterns/)
 - [Линтинг CSS с помощью stylelint](lint_your_css_with_stylelint/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/301594/).
 - [4 мифа о PostCSS](postCSS_mythbusting/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/280988/).
