@@ -1,5 +1,6 @@
 # Статьи и переводы
 
+- [Путь к HTTP/2](journey_to_HTTP_2/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/308846/).
 - [Техники валидации форм](form_validation_techniques/) _перевод_
 - [Паттерны загрузки веб-шрифтов](web_font_loading_patterns/) _перевод_<br> Публикация на [Веб-стандартах](http://web-standards.ru/articles/web-font-loading-patterns/)
 - [Линтинг CSS с помощью stylelint](lint_your_css_with_stylelint/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/301594/).
