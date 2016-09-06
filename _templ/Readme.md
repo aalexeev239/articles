@@ -1,6 +1,6 @@
 # Название статьи
 
-
+![Example image](img/example.jpg)
 
 _Оригинал: [Этой такой](http://google.com/), автор: Имем Фамилией._
 
