@@ -146,9 +146,9 @@ var elements = {
 };
 
 function doStuff() {
-    image.src = 'http://some.url/image';
-    button.click();
-    console.log(text.innerHTML);
+    elements.image.src = 'http://some.url/image';
+    elements.button.click();
+    console.log(elements.text.innerHTML);
     // Остальная логика.
 }
 
