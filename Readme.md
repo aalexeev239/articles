@@ -1,4 +1,6 @@
 # Статьи и переводы
+
+- [Три принципа производительности в Javascript, делающие Bluebird быстрым](javascript_performance_fundamentals_make_bluebird_fast/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/309848/).
 - [4 вида утечек памяти в JavaScript и как с ними бороться](4_types_of_memory_leaks/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/309318/).
 - [Путь к HTTP/2](journey_to_HTTP_2/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/308846/).
 - [Техники валидации форм](form_validation_techniques/) _перевод_<br> Публикация на [htmlacademy](https://htmlacademy.ru/blog/95-form-validation-techniques)
