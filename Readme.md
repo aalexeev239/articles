@@ -1,6 +1,6 @@
 # Статьи и переводы
 
-- [Структуры данных для самых маленьких](itsy-bitsy-data-structures/itsy-bitsy-data-structures.js) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/310794/). Оригинал: [Itsy Bitsy Data Structures](https://github.com/thejameskyle/itsy-bitsy-data-structures)
+- [Структуры данных для самых маленьких](itsy-bitsy-data-structures/itsy-bitsy-data-structures.js) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/310794/). Оригинал: [Itsy Bitsy Data Structures](https://github.com/thejameskyle/itsy-bitsy-data-structures).
 - [Три принципа производительности в Javascript, делающие Bluebird быстрым](javascript_performance_fundamentals_make_bluebird_fast/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/309848/).
 - [4 вида утечек памяти в JavaScript и как с ними бороться](4_types_of_memory_leaks/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/309318/).
 - [Путь к HTTP/2](journey_to_HTTP_2/) _перевод_<br> Публикация на [Хабре](https://habrahabr.ru/post/308846/).
