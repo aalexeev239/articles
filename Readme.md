@@ -9,4 +9,4 @@
 - [Линтинг CSS с помощью stylelint](lint_your_css_with_stylelint/) `перевод`<br> Публикация на [Хабре](https://habrahabr.ru/post/301594/).
 - [4 мифа о PostCSS](postCSS_mythbusting/) `перевод`<br> Публикация на [Хабре](https://habrahabr.ru/post/280988/).
 - [Улучшение загрузки веб-шрифтов с использованием localStorage и поддержкой формата WOFF2](better_webfont_loading/) `перевод`<br> Публикация на [htmlacademy](https://htmlacademy.ru/blog/61).
-- [Готовь Sublime к полёту в космос](http://aalexeev239.github.io/sublime-presentation/) _презентация_
+- [Готовь Sublime к полёту в космос](http://aalexeev239.github.io/sublime-presentation/) `презентация`
