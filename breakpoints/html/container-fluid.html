@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Резиновый контейнер</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <style type="text/css">
+    .container {
+      min-width: 320px;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /*@media only screen and (min-width: 660px) {
+
+      ¯\_(ツ)_/¯
+
+    }*/
+
+    @media only screen and (min-width: 960px) {
+      .container {
+        padding: 0 10px;
+      }
+    }
+
+    /* base styles */
+    body {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.71429;
+      color: #283645;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .features {
+      margin: 20px auto;
+    }
+
+    .features__item {
+      display: flex;
+      text-align: center;
+    }
+
+    .features__title {
+      margin: 0;
+      margin-bottom: 15px;
+      padding: 0;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .features__text {
+      margin: 0;
+      padding: 0;
+      color: #283645;
+    }
+
+    @media only screen and (max-width: 659px) {
+      .features__item {
+        flex-direction: column-reverse;
+      }
+      .features__img {
+        display: none;
+        margin: 0 auto;
+      }
+      .features__item:last-child {
+        margin-bottom: 0;
+      }
+      .features__item:last-child .features__img {
+        margin-top: 40px;
+        display: block;
+        z-index: 1;
+      }
+    }
+
+    @media only screen and (min-width: 660px) and (max-width: 959px) {
+      .features {
+        position: relative;
+        padding: 60px 0;
+        min-height: 485px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .features__item {
+        padding-left: 310px;
+        text-align: left;
+        margin: 20px 0;
+      }
+      .features__item:last-child {
+        margin-bottom: 0;
+      }
+      .features__img {
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      .features {
+        display: flex;
+        justify-content: space-between;
+      }
+      .features__item {
+        width: 300px;
+        flex-direction: column;
+      }
+      .features__img {
+        margin-bottom: 49px;
+      }
+      .features__title {
+        font-size: 30px;
+        margin-bottom: 24px;
+        padding: 0 30px;
+      }
+      .features__text {
+        font-size: 18px;
+        line-height: 1.66667;
+        padding: 0 30px;
+      }
+    }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="features">
+      <div class="features__item">
+        <picture>
+          <source media="(min-width: 1020px)" srcset="img/features/iphone-screen-desktop-1@1x.png 1x, img/features/iphone-screen-desktop-1@2x.png 2x">
+          <source media="(min-width: 700px)" srcset="img/features/iphone-screen-tablet-1@1x.png 1x, img/features/iphone-screen-tablet-1@2x.png 2x"><img src="img/features/iphone-screen-mobile.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Поднимает настроение" class="features__img" title="">
+        </picture>
+        <div class="features__descr">
+          <h3 class="features__title">Поднимает настроение
+            </h3>
+          <p class="features__text">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в&nbsp;несколько кликов!
+          </p>
+        </div>
+      </div>
+      <div class="features__item">
+        <picture>
+          <source media="(min-width: 1020px)" srcset="img/features/iphone-screen-desktop-2@1x.png 1x, img/features/iphone-screen-desktop-2@2x.png 2x">
+          <source media="(min-width: 700px)" srcset="img/features/iphone-screen-tablet-2@1x.png 1x, img/features/iphone-screen-tablet-2@2x.png 2x"><img src="img/features/iphone-screen-mobile.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Меняет мир вокруг" class="features__img" title="">
+        </picture>
+        <div class="features__descr">
+          <h3 class="features__title">Меняет мир вокруг
+            </h3>
+          <p class="features__text">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </div>
+      </div>
+      <div class="features__item">
+        <picture>
+          <source media="(min-width: 1020px)" srcset="img/features/iphone-screen-desktop-3@1x.png 1x, img/features/iphone-screen-desktop-3@2x.png 2x">
+          <source media="(min-width: 700px)" srcset="img/features/iphone-screen-tablet-3@1x.png 1x, img/features/iphone-screen-tablet-3@2x.png 2x"><img src="img/features/iphone-screen-mobile.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Заводит новых друзей" class="features__img" title="">
+        </picture>
+        <div class="features__descr">
+          <h3 class="features__title">Заводит новых друзей
+            </h3>
+          <p class="features__text">Ставьте лайки, комментируете, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
