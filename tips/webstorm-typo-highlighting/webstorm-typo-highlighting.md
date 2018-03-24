@@ -5,3 +5,16 @@
 3. Установите эту директурию в настройках WS `Settings > Spelling > Dictionaries > Custom Dictionaries Filder`. [Инструкция от WebStorm](https://www.jetbrains.com/help/webstorm/spellchecking.html#configuring-dictionaries) вам в помощь.
 4. Для пущей крутости установите подсветку ошибок `Settings > Editor > Color Scheme > Typo`.
 
+![Подсветка ошибок](highlight-typo.png)
+
+---
+
+Вуаля!
+
+![Ошибки подсвечиваются](typo-example-1.png)
+
+---
+
+P.S. Если в словаре нет нужных слов, их можно добавить:
+
+![Добавить слово в словарь](typo-example-2.png)
