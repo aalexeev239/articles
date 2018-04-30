@@ -1,5 +1,7 @@
-# Статьи и переводы
+# Выступления, статьи и переводы
 
+- [RxJS Subjects](https://aalexeev239.github.io/rxjs-subjects/) `выступление` <br> на Moscow Angular Meetup 9
+- [RxJS — доступно, в деталях и на практике](https://aalexeev239.github.io/rxjs-stachka-2018/) `выступление`<br> На конференции [Стачка 2018](https://nastachku.ru/rxjs-dostupno-v-detalyah-i-na-praktike)
 - [Как добавить проверку орфографии в WebStorm](tips/webstorm-typo-highlighting/) `заметка`
 - [Создавайте хорошие таблицы](design-better-data-tables/) `перевод`<br> Публикация на [Хабре](https://habrahabr.ru/post/312422/).
 - [Структуры данных для самых маленьких](itsy-bitsy-data-structures/itsy-bitsy-data-structures-ru_RU.js) `перевод`<br> Публикация на [Хабре](https://habrahabr.ru/post/310794/). Оригинал: [Itsy Bitsy Data Structures](https://github.com/thejameskyle/itsy-bitsy-data-structures).
