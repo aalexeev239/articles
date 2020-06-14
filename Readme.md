@@ -1,7 +1,7 @@
 # Выступления, статьи и переводы
-
+- [12 советов по внедрению TypeScript в React-приложениях](https://habr.com/ru/company/tinkoff/blog/505488/) `статья` на Хабре
 - [RxJS: Higher Order Observables](https://aalexeev239.github.io/rxjs-hoo/) `выступление`<br> на Moscow Angular Meetup 10
-- [RxJS: Intro](https://aalexeev239.github.io/rxjs-intro/) `выступление`<br> На конференции [Стачка 2018](https://nastachku.ru/rxjs-dostupno-v-detalyah-i-na-praktike) и впоследствии на митапах
+- [RxJS: Intro](https://aalexeev239.github.io/rxjs-intro/) `выступление`<br> На [MoscowJs 42](https://www.youtube.com/watch?v=3rEDHnqn-Cw) и на конференции [Стачка 2018](https://nastachku.ru/rxjs-dostupno-v-detalyah-i-na-praktike)
 - [RxJS: Subjects](https://aalexeev239.github.io/rxjs-subjects/) `выступление` <br> на Moscow Angular Meetup 9
 - [Как добавить проверку орфографии в WebStorm](tips/webstorm-typo-highlighting/) `заметка`
 - [Создавайте хорошие таблицы](design-better-data-tables/) `перевод`<br> Публикация на [Хабре](https://habrahabr.ru/post/312422/).
